@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ChromaGod.ColP"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChromaGod"
+             mc:Ignorable="d" 
+             Width="52"
+             Height="22"
+             Background="White">
+    <Border BorderThickness="1" BorderBrush="Black" Margin="2 0 2 0">
+        <StackPanel Orientation="Horizontal">
+            <Border BorderThickness="1" BorderBrush="Black" x:Name="colBorder">
+                <Rectangle x:Name="colDispl" Fill="Yellow" Width="18" MouseUp="colMup"></Rectangle>
+            </Border>
+            <TextBox x:Name="rangeDispl" Text="5" Padding="2 0 0 0" Width="30" TextChanged="textChanged" KeyUp="textKeyUp"></TextBox>
+        </StackPanel>
+    </Border>
+</UserControl>
